@@ -1,27 +1,7 @@
-# Setuptools version restriction to avoid numpy.distutils issues
-setuptools<60.0
-
-# Torch and related dependencies
-torch==2.0.0
-torchvision==0.15.0
-
-# Install CMake (this installs the C++ build system tool)
-cmake==3.24.2
-
-# Install dlib (precompiled wheels should be available for most platforms)
-dlib==19.24.0
-
-# Sentence Transformers and scikit-learn
-sentence-transformers==2.2.2
-scikit-learn==1.0.2  # This version should install with pre-built wheels for C++ extensions
-
-# Other dependencies
-opencv-python==4.5.4.58
-fastapi==0.95.1
-uvicorn==0.20.0
-ftfy==6.1
-regex==2022.3.15
-tqdm==4.64.0
-
-# Git dependencies (CLIP)
-git+https://github.com/openai/CLIP.git
+fastapi==0.95.0
+uvicorn==0.22.0
+torch==2.1.0
+clip==1.0
+scikit-learn==1.0.2
+numpy==1.24.2
+pydantic==1.10.5
