@@ -1,6 +1,7 @@
 import torch
 import numpy as np
 import json
+import os
 import clip
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
@@ -62,7 +63,7 @@ async def search(query: SearchQuery):
         return {"matches": [{"image_path": match[0], "similarity": match[1]} for match in matches]}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
-
+port = int(os.environ.get("PORT", 10000))
 # Run the app with Uvicorn for local testing (when not using Render)
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=port)
