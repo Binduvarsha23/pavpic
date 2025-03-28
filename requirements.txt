@@ -1,8 +1,8 @@
-git+https://github.com/openai/CLIP.git
 fastapi
 pydantic
-clip
+clip-by-openai
 torch
 uvicorn
 Pillow
 scikit-learn
+numpy
