@@ -1,8 +1,9 @@
-fastapi
-pydantic
-clip-by-openai
-torch
-uvicorn
+streamlit==1.29.0
+torch==2.2.0
 Pillow
-scikit-learn
 numpy
+scikit-learn
+ftfy
+regex
+tqdm
+openai-clip
