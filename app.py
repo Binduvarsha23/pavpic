@@ -65,4 +65,4 @@ if uploaded_files:
         cols = st.columns(4)
         for idx, (img_path, score) in enumerate(results):
             with cols[idx % 4]:
-                st.image(dict(images)[img_path], caption=f"{img_path} ({score:.2f})", use_column_width=True)
+                st.image(dict(images)[img_path], caption=f"{img_path} ({score:.2f})", use_container_width=True)
